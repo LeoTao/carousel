@@ -1,0 +1,190 @@
+.carousel {
+    width: 665px;
+    height: 440px;
+    margin-right: 15px;
+    margin-bottom: 40px;
+    float: left;
+    
+    .slide-section {
+        width: 665px;
+        height: 348px;
+        margin-bottom: 3px;
+        overflow: hidden;
+        position: relative;
+
+        ul {
+            height: 348px;
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            li {
+                float: left;
+                width: 665px;
+                list-style: none;
+                //margin-right: 20px;
+
+                img {
+                    width: 665px;
+                    height: 348px;
+                }
+            }
+        }
+
+        .pre {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            margin-top: -45px;
+            width: 40px;
+            height: 90px;
+            background-color: #000;
+            color: @white;
+            opacity: 0.5;
+            filter:alpha(opacity=50);
+            z-index: 2;
+            text-align: center;
+            line-height: 90px;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            box-shadow: none;
+       
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            &.opa {
+                opacity: 0.5;
+                filter:alpha(opacity=50);
+                transition:opacity 0.5s;
+                -moz-transition:opacity 0.5s; /* Firefox 4 */
+                -webkit-transition:opacity 0.5s; /* Safari and Chrome */
+                -o-transition:opacity 0.5s; /* Opera */
+            }
+
+            img {
+                width: 13px;
+                height: 25px;
+                margin: 32px 0 0 0;
+            }
+        }
+        .next {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            margin-top: -45px;
+            width: 40px;
+            height: 90px;
+            background-color: #000;
+            color: @white;
+            opacity: 0.5;
+            filter:alpha(opacity=50);
+            z-index: 2;
+            text-align: center;
+            line-height: 90px;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            box-shadow: none;
+            
+            background-repeat: no-repeat;
+            background-position: -40px 0;
+
+            &.opa {
+                opacity: 0.5;
+                filter:alpha(opacity=50);
+                transition:opacity 0.5s;
+                -moz-transition:opacity 0.5s; /* Firefox 4 */
+                -webkit-transition:opacity 0.5s; /* Safari and Chrome */
+                -o-transition:opacity 0.5s; /* Opera */
+            }
+
+            img {
+                width: 13px;
+                height: 25px;
+                margin: 32px 0 0 0;
+            }
+        }
+    }
+    .slide-nav-section {
+        width: 665px;
+        height: 89px;
+        overflow: hidden;
+        position: relative;
+
+        ul {
+            height: 89px;
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            li {
+                float: left;
+                list-style: none;
+                margin-right: 3px;
+                cursor: pointer;
+
+                img {
+                    width: 164px;
+                    height: 87px;
+                    border: 1px solid @gray;
+
+                    &.active {
+                        border: 1px solid @orange;
+                    }
+                }
+            }
+        }
+
+        .pre {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 30px;
+            height: 89px;
+            background-color: #000;
+            color: @white;
+            opacity: 0.5;
+            filter:alpha(opacity=50);
+            z-index: 2;
+            text-align: center;
+            line-height: 89px;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            box-shadow: none;
+            img {
+                width: 13px;
+                height: 25px;
+                margin: 32px 0 0 0;
+            }
+        }
+        .next {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 30px;
+            height: 89px;
+            background-color: #000;
+            color: @white;
+            opacity: 0.5;
+            filter:alpha(opacity=50);
+            z-index: 2;
+            text-align: center;
+            line-height: 89px;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            box-shadow: none;
+
+            img {
+                width: 13px;
+                height: 25px;
+                margin: 32px 0 0 0;
+            }
+        }
+    }
+}
