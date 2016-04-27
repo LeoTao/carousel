@@ -140,4 +140,4 @@ Carousel.prototype={
     }
 }
 
-module.exports=Carousel;
+//module.exports=Carousel;
