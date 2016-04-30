@@ -16,7 +16,7 @@ var Carousel = function( options ) {
     };
     this.options = $.extend({},defaultOptions,options||{});
     this.cbWitdh = 0;
-    this.slidesTimer = null;
+    this.slidesTimer = undefined;
     this.current_index = 0; 
     this.current_index_ul = 1;
     this.init();
@@ -175,7 +175,9 @@ Carousel.prototype={
     },
     play: function(num) {
         var _ = this;
+        if (typeof _.slidesTimer !== 'undefined') return false;
         clearInterval(_.slidesTimer);
+
         _.slidesTimer = setInterval(function () {
             _.autoPlay();
         }, _.options.autoplay);
